@@ -16,7 +16,7 @@ class List extends React.Component {
         {/* Province */}
         <Text style={styles.text}>{item.provinsi}</Text>
     </View>
-    <View style={[styles.box, {backgroundColor: 'green'}]}>
+    <View style={[styles.box, {backgroundColor: 'blue'}]}>
         {/* Infected */}
         <Text style={styles.text}>{item.kasusPosi}</Text>
     </View>
