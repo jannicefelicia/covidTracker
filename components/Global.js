@@ -25,16 +25,16 @@ class Global extends Component {
     render(){
         return(
             <View style={{height: 75, flexDirection: 'row', justifyContent: 'space-evenly'}}>
-                <View style={[styles.box, {backgroundColor: 'yellow'}]}>
-                    <Text style={styles.text}>Infected</Text>
+                <View style={[styles.box, {backgroundColor: 'lemonchiffon'}]}>
+                    <Text style={styles.text, {fontWeight: 'bold'}}>Infected</Text>
                     <Text style={styles.text}>{this.state.infected}</Text>
                 </View>
-                <View style={[styles.box, {backgroundColor: 'green'}]}>
-                    <Text style={styles.text}>Recovered</Text>
+                <View style={[styles.box, {backgroundColor: 'lightcoral'}]}>
+                    <Text style={styles.text, {fontWeight: 'bold'}}>Recovered</Text>
                     <Text style={styles.text}>{this.state.recovered}</Text>
                 </View>
-                <View style={[styles.box, {backgroundColor: 'red'}]}>
-                    <Text style={styles.text}>Deaths</Text>
+                <View style={[styles.box, {backgroundColor: 'indianred'}]}>
+                    <Text style={styles.text, {fontWeight: 'bold'}}>Deaths</Text>
                     <Text style={styles.text}>{this.state.deaths}</Text>
                 </View>
             </View>
@@ -44,15 +44,15 @@ class Global extends Component {
 
 const styles = StyleSheet.create({
     box: {
-        height: 75,
-        width: 90,
+        height: 100,
+        width: 120,
         borderRadius: 15,
         justifyContent: 'center',
         alignItems: 'center'
     },
     text: {
         fontSize: 16,
-        fontWeight: 'bold'
+        
     }
 })
 
