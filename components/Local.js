@@ -12,22 +12,23 @@ class List extends React.Component {
 
     renderItem = ({item}) => (
     <View style={{height: 75, flexDirection: 'row', justifyContent: 'space-evenly'}}>
-    <View style={[styles.box, {backgroundColor: 'yellow'}]}>
+    <View style={[styles.box, {backgroundColor: 'burlywood', width: 220}]}>
         {/* Province */}
-        <Text style={styles.text}>{item.provinsi}</Text>
+        <Text style={styles.text, {fontWeight: 'bold'}}>{item.provinsi}</Text>
     </View>
-    <View style={[styles.box, {backgroundColor: 'blue'}]}>
+    <View style={[styles.box, {backgroundColor: 'lemonchiffon'}]}>
         {/* Infected */}
         <Text style={styles.text}>{item.kasusPosi}</Text>
     </View>
-    <View style={[styles.box, {backgroundColor: 'red'}]}>
+    <View style={[styles.box, {backgroundColor: 'lightcoral'}]}>
         {/* Recovered */}
         <Text style={styles.text}>{item.kasusSemb}</Text>
     </View>
-    <View style={[styles.box, {backgroundColor: 'white'}]}>
+    <View style={[styles.box, {backgroundColor: 'indianred'}]}>
         {/* Deaths */}
         <Text style={styles.text}>{item.kasusMeni}</Text>
     </View>
+    
 </View>
 
     )
@@ -66,14 +67,15 @@ class List extends React.Component {
 const styles = StyleSheet.create({
     box: {
         height: 50,
-        width: 90,
+        width: 60,
         borderRadius: 15,
         justifyContent: 'center',
         alignItems: 'center'
     },
+
     text: {
-        fontSize: 10,
-    }
+        fontSize: 12,
+    },
 })
 
 
